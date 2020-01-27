@@ -42,8 +42,8 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder()
     {
-        $treeBuilder = new TreeBuilder();
-        $rootNode = $treeBuilder->root('slot_mandrill');
+        $treeBuilder = new TreeBuilder('slot_symfony_mandrill_bundle');
+        $rootNode = $treeBuilder->getRootNode();
 
         $rootNode
         ->children()
